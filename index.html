@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Research Essay Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="title-wrap">
+        <h1>Interactive Research Essay Prototype</h1>
+        <p>Functionality-first build with placeholder content.</p>
+      </div>
+
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Section navigation">
+        <nav>
+          <ul id="section-nav">
+            <li><a href="#intro">1. Introduction</a></li>
+            <li><a href="#narrative">2. Prevailing Narrative</a></li>
+            <li><a href="#craft">3. Craft Culture</a></li>
+            <li><a href="#status">4. Social Status</a></li>
+            <li><a href="#analysis">5. Critical Analysis</a></li>
+            <li><a href="#conclusion">6. Conclusion</a></li>
+            <li><a href="#works-cited">7. Works Cited</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="main-content" class="content" tabindex="-1">
+        <section id="intro" class="doc-section">
+          <h2>Introduction</h2>
+          <p class="placeholder">
+            This project explores how craft culture and social status complicate simplified narratives
+            about foot binding. This is still placeholder copy, but it mirrors the intended argument flow:
+            establish baseline assumptions, introduce conflicting evidence, and invite readers to draw
+            their own conclusions.
+          </p>
+          <details class="panel" open>
+            <summary>Guiding Question</summary>
+            <p>
+              How did the craft culture and social value associated with bound feet complicate the
+              narrative of victimization in pre-modern China?
+            </p>
+          </details>
+        </section>
+
+        <section id="narrative" class="doc-section">
+          <h2>Prevailing Narrative</h2>
+          <p class="placeholder">
+            Common introductory narratives often frame foot binding as a purely coercive and uniformly
+            oppressive practice. This section is a placeholder for that baseline framing before introducing
+            nuance from the sources
+            <button
+              type="button"
+              class="footnote-trigger"
+              data-footnote="The proposal frames this as the starting narrative many readers already know, then intentionally complicates it with source comparison."
+              aria-label="Open footnote"
+            >
+              [1]
+            </button>
+            .
+          </p>
+          <details class="panel">
+            <summary>Perspective A: Coercion and Harm</summary>
+            <p>
+              Placeholder: summarize arguments that emphasize bodily harm, social pressure, and limits on
+              women’s mobility and autonomy.
+            </p>
+          </details>
+          <details class="panel">
+            <summary>Perspective B: Agency Within Constraint</summary>
+            <p>
+              Placeholder: summarize how women and families sometimes actively participated in preserving
+              the practice for social, cultural, or household reasons.
+            </p>
+          </details>
+        </section>
+
+        <section id="craft" class="doc-section">
+          <h2>Craft Culture</h2>
+          <div class="tab-widget" data-tabs>
+            <div class="tab-list" role="tablist" aria-label="Craft tabs">
+              <button role="tab" aria-selected="true" aria-controls="tab-craft-1" id="tab-btn-craft-1">Artifacts</button>
+              <button role="tab" aria-selected="false" aria-controls="tab-craft-2" id="tab-btn-craft-2">Process</button>
+              <button role="tab" aria-selected="false" aria-controls="tab-craft-3" id="tab-btn-craft-3">Meaning</button>
+            </div>
+            <div id="tab-craft-1" role="tabpanel" aria-labelledby="tab-btn-craft-1">
+              Placeholder: use examples from Dorothy Ko, <em>Every Step a Lotus</em>, to show shoes and
+              material culture as crafted objects, not just symbols
+              <button
+                type="button"
+                class="footnote-trigger"
+                data-footnote="Ko (2001) is used in the proposal as foundational material culture context: origins, spread, and objects."
+                aria-label="Open footnote"
+              >
+                [2]
+              </button>
+              .
+            </div>
+            <div id="tab-craft-2" role="tabpanel" aria-labelledby="tab-btn-craft-2" hidden>
+              Placeholder: draw from C. Fred Blake on intergenerational household practice and routines that
+              sustained foot binding in daily life
+              <button
+                type="button"
+                class="footnote-trigger"
+                data-footnote="Blake (1994) is cited for household-level decision making and how practices were perpetuated across generations."
+                aria-label="Open footnote"
+              >
+                [3]
+              </button>
+              .
+            </div>
+            <div id="tab-craft-3" role="tabpanel" aria-labelledby="tab-btn-craft-3" hidden>
+              Placeholder: use Dorothy Ko’s fashion-theory framing to discuss identity, aesthetics, and
+              cultural meaning attached to bound feet
+              <button
+                type="button"
+                class="footnote-trigger"
+                data-footnote="Ko (2015) is positioned as a lens for interpreting fashion, symbolism, and meaning rather than only bodily harm."
+                aria-label="Open footnote"
+              >
+                [4]
+              </button>
+              .
+            </div>
+          </div>
+        </section>
+
+        <section id="status" class="doc-section">
+          <h2>Social Status</h2>
+          <p class="placeholder">
+            This section is reserved for the social and economic stakes of the practice, including class,
+            marriage, and regional variation.
+          </p>
+          <details class="panel">
+            <summary>Class Variation</summary>
+            <p>
+              Placeholder: integrate Christena Turner’s work on class and spatial variation, then compare
+              where the practice was strongly enforced versus where it was less central
+              <button
+                type="button"
+                class="footnote-trigger"
+                data-footnote="Turner (1997) is used for cross-class and cross-region variation, helping avoid a single universal narrative."
+                aria-label="Open footnote"
+              >
+                [5]
+              </button>
+              .
+            </p>
+          </details>
+          <details class="panel">
+            <summary>Regional Variation</summary>
+            <p>
+              Placeholder: include evidence showing that social meaning and lived consequences varied
+              significantly by region and community context.
+            </p>
+          </details>
+        </section>
+
+        <section id="analysis" class="doc-section">
+          <h2>Critical Analysis</h2>
+          <p class="placeholder">
+            Placeholder synthesis area: connect the narrative, craft, and status sections into a core claim
+            about how constrained agency and structural pressure can coexist.
+          </p>
+          <details class="panel">
+            <summary>Counterexample Checkpoint</summary>
+            <p>
+              Placeholder: add Melissa J. Brown et al. to test assumptions about marriage mobility and
+              evaluate where common explanations hold or fail
+              <button
+                type="button"
+                class="footnote-trigger"
+                data-footnote="Brown et al. (2012) is cited in the proposal as a counterexample to simple 'marriage mobility' explanations."
+                aria-label="Open footnote"
+              >
+                [6]
+              </button>
+              .
+            </p>
+          </details>
+        </section>
+
+        <section id="conclusion" class="doc-section">
+          <h2>Conclusion</h2>
+          <p class="placeholder">
+            Placeholder close: restate how the evidence complicates one-dimensional narratives and invite
+            readers to evaluate competing interpretations using the sources.
+          </p>
+        </section>
+        <section id="works-cited" class="doc-section">
+          <h2>Works Cited</h2>
+          <div class="citation-view-controls" role="tablist" aria-label="Citation view mode">
+            <button
+              type="button"
+              class="citation-view-toggle"
+              data-citation-view-target="mla"
+              aria-selected="false"
+            >
+              MLA Bibliography
+            </button>
+            <button
+              type="button"
+              class="citation-view-toggle is-active"
+              data-citation-view-target="informal"
+              aria-selected="true"
+            >
+              Informal + Summary
+            </button>
+          </div>
+
+          <div class="citation-view-panel" data-citation-view="mla" hidden>
+            <ol class="citations-list">
+              <li>
+                Blake, C. Fred.
+                <a href="https://doi.org/10.1086/494917" target="_blank" rel="noopener noreferrer">“Foot-binding in Neo-Confucian China and the appropriation of Female Labor.”</a>
+                <em>Signs: Journal of Women in Culture and Society</em>, vol. 19, no. 3, Apr. 1994, pp.
+                676–712.
+              </li>
+              <li>
+                Brown, Melissa J., et al.
+                <a href="https://doi.org/10.1017/s0021911812001271" target="_blank" rel="noopener noreferrer">“Marriage mobility and footbinding in pre-1949 rural China: A reconsideration of gender, economics, and meaning in social causation.”</a>
+                <em>The Journal of Asian Studies</em>, vol. 71, no. 4, 3 Dec. 2012, pp. 1035–1067.
+              </li>
+              <li>
+                Ko, Dorothy.
+                <a href="https://doi.org/10.2752/136270497779754552" target="_blank" rel="noopener noreferrer">“Bondage in time: Footbinding and fashion theory.”</a>
+                <em>Fashion Theory</em>, vol. 1, no. 1, 21 Apr. 2015, pp. 3–27.
+              </li>
+              <li>
+                Ko, Dorothy.
+                <a href="https://www.ucpress.edu/book/9780520223692/every-step-a-lotus" target="_blank" rel="noopener noreferrer"><em>Every Step a Lotus: Shoes for Bound Feet</em></a>.
+                University of California Press, 2001.
+              </li>
+              <li>
+                Turner, Christena L.
+                <a href="https://doi.org/10.1111/j.1467-6443.1997.tb00196.x" target="_blank" rel="noopener noreferrer">“Locating footbinding: Variations across class and space in nineteenth and early twentieth century China*.”</a>
+                <em>Journal of Historical Sociology</em>, vol. 10, no. 4, 8 Nov. 2010, pp. 444–479.
+              </li>
+            </ol>
+          </div>
+
+          <div class="citation-view-panel" data-citation-view="informal">
+            <div class="source-summary-list">
+              <article class="source-summary">
+                <h3><a href="https://doi.org/10.1086/494917" target="_blank" rel="noopener noreferrer">Blake (1994)</a></h3>
+                <p>
+                  Looks at how foot binding was sustained in households over generations, especially through
+                  gendered labor and family-level social expectations.
+                </p>
+              </article>
+              <article class="source-summary">
+                <h3><a href="https://doi.org/10.1017/s0021911812001271" target="_blank" rel="noopener noreferrer">Brown et al. (2012)</a></h3>
+                <p>
+                  Reconsiders the marriage-mobility explanation and argues that social causation was more
+                  complicated than a single economic upward-mobility model.
+                </p>
+              </article>
+              <article class="source-summary">
+                <h3><a href="https://doi.org/10.2752/136270497779754552" target="_blank" rel="noopener noreferrer">Ko (2015)</a></h3>
+                <p>
+                  Uses fashion theory to frame foot binding as a cultural and aesthetic system, not only a
+                  medical or moral issue.
+                </p>
+              </article>
+              <article class="source-summary">
+                <h3><a href="https://www.ucpress.edu/book/9780520223692/every-step-a-lotus" target="_blank" rel="noopener noreferrer">Ko (2001)</a></h3>
+                <p>
+                  Provides core background on the history, spread, and material culture of bound-feet shoes,
+                  making it useful as foundational context.
+                </p>
+              </article>
+              <article class="source-summary">
+                <h3><a href="https://doi.org/10.1111/j.1467-6443.1997.tb00196.x" target="_blank" rel="noopener noreferrer">Turner (1997)</a></h3>
+                <p>
+                  Emphasizes class and regional variation, showing that the social role and effects of foot
+                  binding differed across communities.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <div class="next-actions outside-conclusion">
+          <button id="back-to-top" type="button">Back to Top</button>
+        </div>
+      </main>
+
+      <aside class="notes-column" aria-label="Reader notes panel">
+        <details class="notes-drawer" open>
+          <summary>Reader Notes</summary>
+          <form id="reflection-form" class="reflection">
+            <textarea
+              id="reader-notes"
+              rows="10"
+              placeholder="Type notes here... they persist in localStorage."
+            ></textarea>
+          </form>
+        </details>
+      </aside>
+    </div>
+
+    <div id="footnote-popover" class="footnote-popover" role="dialog" aria-live="polite" hidden></div>
+    <script src="script.js"></script>
+  </body>
+</html>
