@@ -108,22 +108,49 @@ button:hover {
   position: fixed;
   right: 1rem;
   top: var(--rail-top-offset);
-  width: 280px;
+  width: auto;
   z-index: 10;
 }
 
 .notes-drawer {
+  margin-left: auto;
+  width: 100%;
+  max-width: 280px;
+  overflow: hidden;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 0.25rem;
   box-shadow: 0 3px 12px var(--shadow);
   padding: 0.55rem 0.7rem;
+  transition: width 180ms ease;
 }
 
 .notes-drawer > summary {
   cursor: pointer;
   font-weight: 600;
   color: #5a1d1d;
+  list-style: none;
+}
+
+.notes-drawer > summary::-webkit-details-marker {
+  display: none;
+}
+
+.notes-drawer:not([open]) {
+  width: 2.8rem;
+  padding: 0.55rem 0.4rem;
+}
+
+.notes-drawer:not([open]) > summary {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.04em;
+  min-height: 8.5rem;
+  margin: 0 auto;
+}
+
+.notes-drawer:not([open]) .reflection {
+  display: none;
 }
 
 #section-nav {
@@ -284,6 +311,34 @@ button:hover {
   font-weight: 600;
 }
 
+.mobility-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  background: #fff9f0;
+  border: 1px solid #dbc9ab;
+}
+
+.mobility-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  color: #5a1d1d;
+  margin-bottom: 0.4rem;
+}
+
+.mobility-table th,
+.mobility-table td {
+  padding: 0.45rem 0.5rem;
+  border: 1px solid #dbc9ab;
+  text-align: left;
+}
+
+.mobility-table thead th {
+  background: #f4e8d5;
+}
+
 .tab-widget {
   border: 1px solid #dbc9ab;
   border-radius: 0.25rem;
@@ -352,5 +407,19 @@ textarea {
     position: static;
     width: auto;
     margin-top: 0.75rem;
+  }
+
+  .notes-drawer,
+  .notes-drawer:not([open]) {
+    width: 100%;
+    max-width: none;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .notes-drawer:not([open]) > summary {
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    min-height: 0;
+    margin: 0;
   }
 }
