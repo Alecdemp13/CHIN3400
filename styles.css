@@ -377,6 +377,16 @@ details.panel .mobility-table td {
   padding: 0.9rem;
 }
 
+.craft-tab-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto 0.7rem;
+  border: 1px solid #dbc9ab;
+  border-radius: 0.25rem;
+}
+
 .reflection {
   display: grid;
   gap: 0.5rem;
