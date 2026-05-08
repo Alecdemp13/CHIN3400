@@ -314,6 +314,7 @@ button:hover {
 .mobility-table {
   width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
   margin-top: 0.8rem;
   font-size: 0.95rem;
   background: #fff9f0;
@@ -333,6 +334,13 @@ button:hover {
   padding: 0.45rem 0.5rem;
   border: 1px solid #dbc9ab;
   text-align: left;
+}
+
+/* Fallback for environments where generic table styles override class rules. */
+details.panel .mobility-table,
+details.panel .mobility-table th,
+details.panel .mobility-table td {
+  border: 1px solid #dbc9ab;
 }
 
 .mobility-table thead th {
